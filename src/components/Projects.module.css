@@ -1,0 +1,157 @@
+.projects {
+  background: radial-gradient(circle at center, rgba(160, 32, 240, 0.25), #0b0b2e 0%);
+  color: #fff;
+  padding: 50px 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(101, 56, 177, 0.55) 0%,
+      rgba(69, 30, 125, 0.35) 30%,
+      rgba(15, 0, 40, 0.95) 70%
+    ),
+    linear-gradient(
+      135deg,
+      #070018 0%,
+      #120028 30%,
+      #1a0038 60%,
+      #070018 100%
+    );
+}
+
+.title {
+  background: linear-gradient(#E511FB, #13E6F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: bold;
+  margin-bottom: 40px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+   width: 100%;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+
+.projectCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 35px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  width: 525px;
+  max-height: 935px;
+  gap: 29px;
+  margin-bottom: 30px;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(160, 32, 240, 0.6);
+}
+
+.projectImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.projectName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.projectDesc {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.techStack span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnLive {
+  background-color: #a020f0;
+  color: #ffffff;
+}
+
+.btnGithub {
+  background-color: #6ec1e4;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.customBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+
+  color: white;
+  font-size: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #8a2be2 0%,
+    #d946ef 50%,
+    #38bdf8 100%
+  );
+
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+  transition: all 0.3s ease;
+} 
+
+.custom-btn i {
+  font-size: 24px;
+}
+
+.custom-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
+}
+
+img{
+  height: 275px;
+}

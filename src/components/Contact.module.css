@@ -1,0 +1,137 @@
+.contact {
+  background: radial-gradient(circle at center, rgba(120, 0, 255, 0.25), #0b0b2e 0%);
+  color: #fff;
+  padding: 50px 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(101, 56, 177, 0.55) 0%,
+      rgba(69, 30, 125, 0.35) 30%,
+      rgba(15, 0, 40, 0.95) 70%
+    ),
+    linear-gradient(
+      135deg,
+      #070018 0%,
+      #120028 30%,
+      #1a0038 60%,
+      #070018 100%
+    );
+}
+
+.title {
+  background: linear-gradient(#E511FB, #13E6F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: bold;
+  margin-bottom: 20px;
+}
+
+
+.circleLayout {
+  position: relative;
+  width: 400px; 
+  height: 400px;
+  margin: 0 auto;
+}
+
+.circleLayout .iconWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.circleLayout .whatsapp   { transform: translate(-50%, -50%) rotate(0deg)   translate(140px) rotate(-0deg); }
+.circleLayout .github     { transform: translate(-50%, -50%) rotate(60deg)  translate(140px) rotate(-72deg); }
+.circleLayout .email      { transform: translate(-50%, -50%) rotate(120deg) translate(140px) rotate(-144deg); }
+.circleLayout .location   { transform: translate(-50%, -50%) rotate(180deg) translate(140px) rotate(-216deg); }
+.circleLayout .linkedin   { transform: translate(-50%, -50%) rotate(240deg) translate(140px) rotate(-288deg); }
+.circleLayout .telegram   { transform: translate(-50%, -50%) rotate(300deg) translate(140px) rotate(-288deg); }
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(255, 0, 200, 0.4), rgba(0, 200, 255, 0.3));
+  box-shadow: 0 0 40px rgba(255, 0, 200, 0.3);
+  transition: 0.4s ease;
+}
+
+.iconWrapper:hover {
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 60px rgba(0, 200, 255, 0.5);
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+
+
+.form {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 150px;margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 50px 50px 20px 50px;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.form label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #aaa;
+}
+
+.form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.btnSend {
+  background: linear-gradient(90deg, #ff00cc, #00ccff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.btnSend:hover {
+  opacity: 0.85;
+}

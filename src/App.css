@@ -1,0 +1,285 @@
+
+
+.about {
+  background: radial-gradient(circle at center, rgba(160, 32, 240, 0.25), #0b0b2e 0%);
+  padding: 50px 100px;
+  text-align: center;
+  min-height: 940px;
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(101, 56, 177, 0.55) 0%,
+      rgba(69, 30, 125, 0.35) 30%,
+      rgba(15, 0, 40, 0.95) 70%
+    ),
+    linear-gradient(
+      135deg,
+      #070018 0%,
+      #120028 30%,
+      #1a0038 60%,
+      #070018 100%
+    );
+}
+
+.abouttitle {
+  background: linear-gradient(#E511FB, #13E6F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: bold;
+  margin-bottom: 20px;
+}
+
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.5;
+  color: #ccc;
+  font-size: 1.25rem;
+
+  /* margin-top: 15px; */
+}
+
+/* Two cards per row */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 56px 89px 63px 54px;
+  text-align: left;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  width: 591px;
+  height: 235px;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(160, 32, 240, 0.4);
+}
+
+.icon {
+  background-color: rgba(160, 32, 240, 0.2);
+  color: #ff9cf9;
+  width: 73px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding: 17px 16px 17px 17px;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1c0800;
+}
+
+
+.hero-section {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(101, 56, 177, 0.55) 0%,
+      rgba(69, 30, 125, 0.35) 30%,
+      rgba(15, 0, 40, 0.95) 70%
+    ),
+    linear-gradient(
+      135deg,
+      #070018 0%,
+      #120028 30%,
+      #1a0038 60%,
+      #070018 100%
+    );
+}
+
+.custom-navbar {
+  background: rgba(42, 28, 74, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2b1b47;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #bb4dff !important;
+}
+
+.logo span {
+  color: #5b9dff;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.active-nav {
+  background: #2f67d8;
+  border-radius: 8px;
+  color: white !important;
+  padding: 8px 16px !important;
+}
+
+.hire-btn {
+  background: #75c6ff;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
+
+
+
+.availability-badge {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.08);
+}
+
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  background: linear-gradient(
+    90deg,
+    #792aa1,
+    #35a8ff
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 600px;
+  color: #e4e4e4;
+  margin-top: 15px;
+}
+
+.project-btn {
+  margin-top: 25px;
+  background: linear-gradient(
+    90deg,
+    #6bb9ff,
+    #8fd6ff
+  );
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.social-links i {
+  cursor: pointer;
+}
+
+
+.hero-image {
+  width: 350px;
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 30px rgba(139, 93, 255, 0.4),
+    0 0 80px rgba(53, 168, 255, 0.25);
+    
+}
+
+@media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    width: 280px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons i{
+   font-size: 1.8rem;
+  color: #fff;
+  padding: 4px 8px;       
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.icons i:hover {
+  background: linear-gradient(90deg, #ff00cc, #00ccff);
+  color: #000;
+}
+

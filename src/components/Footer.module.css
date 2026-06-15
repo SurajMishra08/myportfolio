@@ -1,0 +1,134 @@
+.footer {
+  background: radial-gradient(circle at center, rgba(120, 0, 255, 0.25), #210848 0%);
+  color: #fff;
+  padding: 50px 150px;
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(101, 56, 177, 0.55) 0%,
+      rgba(69, 30, 125, 0.35) 30%,
+      rgba(15, 0, 40, 0.95) 70%
+    ),
+    linear-gradient(
+      135deg,
+      #070018 0%,
+      #120028 30%,
+      #1a0038 60%,
+      #070018 100%
+    );
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.footerLeft {
+  flex: 1;
+  min-width: 250px;
+  float: left;
+}
+
+.logoBox {
+  background-color: #e08bff;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.logoName{
+    font-size: 27px;
+    background: linear-gradient(#E511FB, #13E6F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 7px;
+}
+
+.brand {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+} 
+
+.highlight {
+  color: #6ec1e4;
+}
+
+.tagline {
+  font-size: 1.2rem;   
+  color: #ccc;
+  max-width: 280px;
+}
+
+/* Middle Section */
+.footerMiddle {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.links li {
+  font-size: 1.15rem; 
+  color: #bbb;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.links li:hover {
+  color: #6ec1e4;
+}
+
+/* Right Section */
+.footerRight {
+  flex: 1;
+  min-width: 200px;
+  float: right;
+  text-align: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  margin-left: 115px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;       
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  background: linear-gradient(90deg, #ff00cc, #00ccff);
+  color: #000;
+}
