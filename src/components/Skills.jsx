@@ -1,4 +1,4 @@
-import htmlLogo from "../assets/html.png";
+import htmlLogo from "../assets/Html.png";
 import cssLogo from "../assets/css.png";
 import jsLogo from "../assets/js.png";
 import pythonLogo from "../assets/python.png";
