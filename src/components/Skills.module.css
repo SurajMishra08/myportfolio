@@ -80,7 +80,7 @@
 .card img {
   width: 100%;
   max-width: 180px;
-  height: auto;          /* remove fixed 300px */
+  height: auto;         
   object-fit: contain;
   margin: 0 auto 15px;
   display: block;
@@ -111,7 +111,7 @@ h3 {
   margin-top: 30px;
 }
 
-/* Tablet view */
+
 @media (max-width: 992px) {
   .skills {
     padding: 40px 50px;
@@ -123,11 +123,10 @@ h3 {
     font-size: 28px;
   }
   .card {
-    flex: 0 0 calc(50% - 30px);  /* 2 cards per row */
+    flex: 0 0 calc(50% - 30px); 
     max-width: calc(50% - 30px);
 }
 }
-/* Mobile view */
 @media (max-width: 480px) {
   .skills {
     padding: 30px 20px;
@@ -150,7 +149,7 @@ h3 {
     padding: 15px;
   }
   .card h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 

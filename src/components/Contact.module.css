@@ -109,9 +109,9 @@
 
 
 .form {
- width: 100%;          /* full width */
-  max-width: 900px;     /* laptop par bada size */
-  margin: 40px auto;    /* center align */
+ width: 100%;       
+  max-width: 900px;    
+  margin: 40px auto;    
   padding: 30px 20px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);

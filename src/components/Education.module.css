@@ -116,7 +116,6 @@
 }
 
 
-/* Tablet view */
 @media (max-width: 992px) {
   .title {
     font-size: 40px;
@@ -137,7 +136,6 @@
   }
 }
 
-/* Mobile view */
 @media (max-width: 480px) {
   .education {
     padding: 30px 20px;
