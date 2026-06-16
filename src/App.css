@@ -22,6 +22,12 @@
     );
 }
 
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 20px;
+  }
+}
+
 .abouttitle {
   background: linear-gradient(#E511FB, #13E6F2);
   -webkit-background-clip: text;
@@ -57,12 +63,12 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 56px 89px 63px 54px;
   text-align: left;
   transition: 0.3s;
   backdrop-filter: blur(10px);
-  width: 591px;
-  height: 235px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
 
 }
 
@@ -97,6 +103,44 @@
   line-height: 1.5;
 }
 
+/* Tablet view */
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr; /* single column */
+  }
+  .card {
+    padding: 25px;
+  }
+  .abouttitle {
+    font-size: 40px;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr; /* stack all cards */
+    gap: 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .abouttitle {
+    font-size: 32px;
+  }
+  .intro {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
 
 
 
@@ -128,45 +172,6 @@ body {
     );
 }
 
-.custom-navbar {
-  background: rgba(42, 28, 74, 0.95);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #2b1b47;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #bb4dff !important;
-}
-
-.logo span {
-  color: #5b9dff;
-}
-
-.nav-link {
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.active-nav {
-  background: #2f67d8;
-  border-radius: 8px;
-  color: white !important;
-  padding: 8px 16px !important;
-}
-
-.hire-btn {
-  background: #75c6ff;
-  color: white;
-  border-radius: 8px;
-  padding: 8px 20px;
-}
 
 
 
@@ -175,8 +180,8 @@ body {
   display: inline-block;
   padding: 10px 22px;
   border-radius: 30px;
-  margin-bottom: 30px;
-  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
 
   border: 1px solid rgba(255,255,255,0.2);
   background: rgba(255,255,255,0.08);
@@ -238,8 +243,9 @@ body {
 
 
 .hero-image {
-  width: 350px;
-  border-radius: 18px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 
   box-shadow:
     0 0 30px rgba(139, 93, 255, 0.4),
@@ -247,39 +253,98 @@ body {
     
 }
 
+
 @media (max-width: 768px) {
-
-  .hero-title {
-    font-size: 2.8rem;
+  .row.align-items-center {
+    flex-direction: column;
+    text-align: center;
   }
-
-  .hero-subtitle {
-    font-size: 2rem;
+  .col-lg-7, .col-lg-5 {
+    width: 100%;
   }
-
-  .hero-description {
-    font-size: 1rem;
-  }
-
-  .hero-image {
-    width: 280px;
+  .hero-title { font-size: 2.8rem; }
+  .hero-subtitle { font-size: 2rem; }
+  .hero-description { font-size: 1rem; }
+  .hero-image { max-width: 100%; height: auto; }
+  .social-links { justify-content: center; gap: 15px; }
+  .availability-badge{
+    margin-top: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; text-align: center; }
+  .hero-subtitle { font-size: 1.4rem; }
+  .hero-description { font-size: 0.9rem; max-width: 90%; margin: auto; }
+  .hero-image { width: 220px; margin-top: 20px; }
+  .social-links { font-size: 1.5rem; gap: 12px; }
+  .availability-badge{
+    margin-top: 5px;
+  }
+}
+
 
 a {
   text-decoration: none;
 }
 
-.icons i{
-   font-size: 1.8rem;
+.icons i {
+  font-size: 1.8rem;
   color: #fff;
-  padding: 4px 8px;       
+  padding: 6px;
   border-radius: 50%;
   transition: 0.4s;
+}
+@media (max-width: 480px) {
+  .icons i {
+    font-size: 1.4rem;
+    padding: 4px;
+  }
 }
 
 .icons i:hover {
   background: linear-gradient(90deg, #ff00cc, #00ccff);
   color: #000;
 }
+
+.custom-navbar {
+  background: rgba(42, 28, 74, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2b1b47;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #bb4dff !important;
+}
+
+.logo span {
+  color: #5b9dff;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.active-nav {
+  background: #2f67d8;
+  border-radius: 8px;
+  color: white !important;
+  padding: 8px 16px !important;
+}
+
+.hire-btn {
+  background: #75c6ff;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
 

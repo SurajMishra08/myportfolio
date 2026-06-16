@@ -1,7 +1,7 @@
 .footer {
   background: radial-gradient(circle at center, rgba(120, 0, 255, 0.25), #210848 0%);
   color: #fff;
-  padding: 50px 150px;
+   padding: 40px 80px;
   font-family: "Poppins", sans-serif;
   background:
     radial-gradient(
@@ -116,7 +116,8 @@
   display: flex;
   gap: 25px;
   margin-top: 20px;
-  margin-left: 115px;
+  margin-left: 0;
+  justify-content: center;
 }
 
 .icon {
@@ -131,4 +132,54 @@
 .icon:hover {
   background: linear-gradient(90deg, #ff00cc, #00ccff);
   color: #000;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 40px;
+    text-align: center;
+  }
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .icon {
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .logoBox {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .logoName {
+    font-size: 20px;
+  }
+  .tagline {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  .links li {
+    font-size: 1rem;
+  }
+  .icon {
+    font-size: 1.6rem;
+    padding: 8px;
+  }
+  .socialIcons {
+    gap: 15px;
+  }
 }

@@ -6,6 +6,7 @@
   z-index: 1000;
   background-color: #2b1b47;
   text-decoration: none;
+   padding: 0.5rem 1rem;
 }
 
 .logo {
@@ -17,6 +18,12 @@
   background-clip: text;
   text-decoration: none;
 }
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
 
 .navLink {
   color: #fff;
@@ -24,14 +31,28 @@
   border-radius: 8px;
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  .navLink {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+  }
+}
+
 
 .activeNav {
   background: #2f67d8;
   border-radius: 8px;
   color: white !important;
-  padding: 8px 16px !important;
+  padding: 6px 12px !important;
   text-decoration: none;
 }
+@media (max-width: 480px) {
+  .activeNav {
+    padding: 6px 12px !important;
+  }
+}
+
 
 
 .hireBtn {
@@ -40,11 +61,57 @@
   border-radius: 8px;
   padding: 8px 20px;
 }
+@media (max-width: 768px) {
+  .hireBtn {
+    display: block;
+    margin: 15px auto;
+    width: fit-content;
+  }
+}
+
 
 a {
   text-decoration: none;
 }
 
 .hireBtn:hover{
+  transform: scale(1.05);
   box-shadow: 0 0 60px rgba(0, 200, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+  .navLink {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .hireBtn {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .navLink {
+    font-size: 0.9rem;
+    margin: 6px 0;
+    text-align: center;
+  }
+  .activeNav {
+    font-size: 0.9rem;
+    padding: 5px 10px !important;
+  }
+  .hireBtn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    margin: 10px auto;
+  }
 }
