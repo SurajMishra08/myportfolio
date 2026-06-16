@@ -156,14 +156,20 @@
     margin-bottom: 10px;
   }
   .eduHeader {
-    flex-direction: column;
+    flex-direction: column;   /* stack school + year */
     gap: 5px;
+    text-align: center;
+    word-wrap: break-word;    /* allow text wrapping */
+    overflow-wrap: break-word;
   }
   .score {
     font-size: 1rem;
   }
-  .school, .year {
+  .year {
     font-size: 0.85rem;
+  }
+  .school{
+    font-size: 0.7rem;
   }
 }
 
@@ -173,3 +179,4 @@
     max-width: none;
   }
 }
+
