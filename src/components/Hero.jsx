@@ -28,7 +28,7 @@ const Hero = () => {
                 className="btn project-btn"
                 onClick={() =>
                   (window.location.href =
-                    "https://drive.google.com/file/d/14vHHilhUnxjgun_8zP1v5lz7HF8yAR12/view?usp=drive_link")
+                    "https://drive.google.com/file/d/185TQ0c7xbuDkQgmdfpHhAWhf1Ddy6wFw/view?usp=drivesdk")
                 }
               >
                 View Resume →
