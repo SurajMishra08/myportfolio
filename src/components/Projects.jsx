@@ -1,7 +1,7 @@
 import hirehubImg from "../assets/hirehub.png";
 import sbhImg from "../assets/sbh.png";
 import tajImg from "../assets/taj.png";
-import bakeryImg from "../assets/bakery.png";
+import ovs from "../assets/onlinevotingsystem.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import style from "./Projects.module.css";
@@ -87,6 +87,44 @@ function Projects() {
 
         {/* Card 3 */}
         <div className={style.projectCard}>
+          <img
+            src={ovs}
+            alt="online voting system"
+            className={style.projectImage}
+          />
+          <h3 className={style.projectName}>Online Voting System</h3>
+          <p className={style.projectDesc}>
+            Secure online voting platform with authentication and a
+            user-friendly dashboard.
+          </p>
+
+          <div className={style.techStack}>
+            <span>Html</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>React</span>
+          </div>
+
+          <div className={style.buttons}>
+            <a
+              href="https://online-voting-system-wwuc.onrender.com"
+              className={style.customBtn}
+            >
+              <HiOutlineExternalLink />
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/SurajMishra08/Online-Voting-System"
+              className={style.customBtn}
+            >
+              <FaGithub />
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* Card 4 */}
+        <div className={style.projectCard}>
           <img src={tajImg} alt="taj Resort" className={style.projectImage} />
           <h3 className={style.projectName}>Taj Resort</h3>
           <p className={style.projectDesc}>
@@ -111,44 +149,6 @@ function Projects() {
             </a>
             <a
               href="https://github.com/SurajMishra08/TajWebsite"
-              className={style.customBtn}
-            >
-              <FaGithub />
-              GitHub
-            </a>
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div className={style.projectCard}>
-          <img
-            src={bakeryImg}
-            alt="Bakery Website"
-            className={style.projectImage}
-          />
-          <h3 className={style.projectName}>Bakery Website</h3>
-          <p className={style.projectDesc}>
-            Designed a bakery web app with modern layout, product galleries,
-            contact/order form, and intuitive navigation for customer
-            interaction.
-          </p>
-
-          <div className={style.techStack}>
-            <span>Html</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-          </div>
-
-          <div className={style.buttons}>
-            <a
-              href="https://sweetdelightswebsite.netlify.app/"
-              className={style.customBtn}
-            >
-              <HiOutlineExternalLink />
-              Live Demo
-            </a>
-            <a
-              href="https://github.com/SurajMishra08/BakeryWebsite"
               className={style.customBtn}
             >
               <FaGithub />
